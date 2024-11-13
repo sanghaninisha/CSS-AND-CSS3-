@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex{
+            height: 100vh;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            /* flex-direction: row-reverse; */
+            gap: 25px;
+            
+        }
+        .flex > div{
+            height: 350px;
+            width: 300px;
+            color: black;
+            font-size: 25px;
+            background-color: aqua;
+        }
+        .inner-child1 h3{
+         font-size: 25px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .inner-child2 p{
+            font-size: 15px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .para-1{
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex .child3{
+            width: 400px;
+        }
+        .sec-3 p{
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .sec-2 button{
+            width: 380px;
+            height: 24px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .child3 .sec-2{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .child3 .sec-1{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .sec-1 button{
+            height: 25px;
+            width: 80px;
+        }
+
+
+        
+        
+      
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="child1">
+            <div class="inner-child1"><h3><b>First article</b></h3></div>
+            <div class="inner-child2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ducimus! ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, repellat. ipsum, dolor sit amet consectetur adipisicing elit. Nisi, maxime? ipsum dolor sit amet consectetur adipisicing elit. Nostrum animi numquam ullam magni, libero facere aut repudiandae sed et dolorum labore alias, inventore consequatur quod neque accusamus commodi, ad impedit?</p></div>
+        </div>
+        <div class="child2">
+            <div class="inner-child1"><h3><b>Second article</b></h3></div>
+            <div class="inner-child2"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, adipisci? ipsum dolor, sit amet consectetur adipisicing elit. Inventore, eius. ipsum, dolor sit amet consectetur adipisicing elit. Nisi, maxime? ipsum dolor sit amet consectetur adipisicing elit. Nostrum animi numquam ullam magni, libero facere aut repudiandae sed et dolorum labore alias, inventore consequatur quod neque accusamus commodi, ad impedit?</p></div>
+        </div>
+        <div class="child3">
+            <div class="sec-1">
+                <div class="para-1"><button><b>Smile</b></button></div>
+                <div class="para-1"><button><b>Laugh</b></button></div>
+                <div class="para-1"><button><b>Wink</b></button></div>
+                <div class="para-1"><button><b>Shrug</b></button></div>
+            </div>
+            <div class="sec-2"><button><b>Blush</b></button></div>
+            <div class="sec-3">
+                <p>Lorem, ipsum dolor. ipsum dolor sit amet consectetur adipisicing. ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis? ipsum, dolor sit amet consectetur adipisicing elit. Odit consectetur numquam magni ab. Ea numquam iure veritatis vel? Explicabo pariatur expedita nisi voluptatum dolorem. Maiores facere quo magni assumenda esse? <br><br>Lorem ipsum dolor sit amet., ipsum dolor. ipsum dolor sit amet. ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quidem esse totam dolores beatae explicabo impedit, nulla, culpa velit voluptatem, aspernatur quisquam officia iusto. Harum impedit nisi ipsum dignissimos fugit?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

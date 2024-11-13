@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .team{
+        height: auto;
+        width: 1420px;
+        display: flex;
+       
+    }
+    .main-box1{
+        height: 700px;
+        width: 820px;
+        /* border: 2px solid red;   */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        gap: 10px;
+    }
+    .main-box1>.smallbox1{
+        height: 100px;
+        width: 700px;
+        /* border: 2px solid red; */
+        justify-content: end;
+        display: flex;
+        /* margin-top: -360px; */
+        gap: 10px;
+        margin-right: 20px;
+    }
+    .smallbox1>.sbb-1{
+        height: 50px;
+        width: 220px;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sbb-1{
+        color: white;
+        font-size: 30px;
+        font-family: monospace;
+    }
+    .smallbox1>.sbb-2{
+        height: 50px;
+        width: 50px;
+        /* border: 2px solid red; */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        /* font-size: 50px; */
+    }
+    .sbb-2>.fa-solid{
+        font-size: 30px;
+    }
+    .main-box1>.smallbox-2{
+        height: 100px;
+        width: 700px;
+        /* border: solid black; */
+        margin-right: 50px; 
+    }
+    .smallbox-2>.sbb-1{
+        display: flex;
+        justify-content: end;
+        font-size: 30px;
+        color: red;
+    }
+    .smallbox-2>.sbb-2{
+       height: 50px;
+       width: 700px;
+       /* border: 2px solid red; */
+       flex-direction: column-reverse;
+       color: white;
+    }
+    .main-box1>.smallbox-3{
+        height: 100px;
+        width: 700px;
+        /* border: solid black; */
+        margin-right: 50px;
+    }
+    .smallbox-3>.sbb-1{
+        display: flex;
+        justify-content: end;
+        font-size: 30px;
+        color: red;
+    }
+    .smallbox-3>.sbb-2{
+       height: 50px;
+       width: 700px;
+       /* border: 2px solid red; */
+       flex-direction: column-reverse;
+       color: white;
+    }
+    .main-box1>.smallbox-4{
+        height: 100px;
+        width: 700px;
+        /* border: solid black; */
+        margin-right: 50px;
+    }
+    .smallbox-4>.sbb-1{
+        display: flex;
+        justify-content: end;
+        font-size: 30px;
+        color: red;
+    }
+    .smallbox-4>.sbb-2{
+       height: 50px;
+       width: 700px;
+       /* border: 2px solid red; */
+       flex-direction: column-reverse;
+       color: white;
+    }
+    .main-box2{
+        height: 700px;
+        width: 750px;
+       position: relative;
+        background-color: white;
+        background-image: url(https://themes.ishyoboy.com/multicorp/wp/wp-content/uploads/2014/05/picjumbo.com_IMG_3361-571x571.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       background-position: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+    .circule-1{
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 9;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        margin-top: 250px;
+        margin-left: -30px;
+    }
+    .circule-1>.fa-solid{
+        color: black;
+        font-size: 25px;
+    }
+    .circule-2{
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 9;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        margin-top: 360px;
+        margin-left: -30px;
+    }
+    .circule-2>.fa-solid{
+        color: black;
+        font-size: 25px;
+    }
+    .circule-3{
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 9;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        margin-top: 470px;
+        margin-left: -30px;
+    }
+    .circule-3>.fa-solid{
+        color: black;
+        font-size: 25px;
+    }
+      
+</style>
+<body>
+    <div class="team">
+        <div class="main-box1">
+            <div class="smallbox1">
+                <div class="sbb-1"><b>OUR SERVICES</b></div>
+                <div class="sbb-2"><i class="fa-solid fa-grip-lines-vertical fa-2xs" style="color: #f04628;"></i></div>
+            </div>
+            <div class="smallbox-2">
+                <div class="sbb-1">WEB DESIGN</div>
+                <div class="sbb-2" align="right">Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo sit eum est rem quos iste!</div>
+            </div>
+            <div class="smallbox-3">
+                <div class="sbb-1">PRINT DESIGN</div>
+                <div class="sbb-2" align="right">Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo sit eum est rem quos iste!</div>
+            </div>
+            <div class="smallbox-4">
+                <div class="sbb-1">PHOTOGRAPHY</div>
+                <div class="sbb-2" align="right">Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo sit eum est rem quos iste!</div>
+            </div>
+        </div>
+        <div class="main-box2">
+             <div class="circule-1"><i class="fa-solid fa-desktop"></i></div>
+             <div class="circule-2"><i class="fa-solid fa-print"></i></div>
+             <div class="circule-3"><i class="fa-solid fa-camera"></i></div>
+        </div>
+    </div>
+</body>
+</html>

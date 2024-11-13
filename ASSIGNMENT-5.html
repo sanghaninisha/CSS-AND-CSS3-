@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .main{
+            height: 620px;
+            width: 1350px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .child1{
+            height: 350px;
+            width: 1300px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .child1 > .n1{
+            height: 300px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            box-shadow: 0px 6px 6px 6px gainsboro;
+        }
+        .n1 > .t1{
+            height: 120px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+         }
+         .t1 > .h1{
+            height: 50px;
+            width: 110px;
+            font-size: 25px;
+            color: white;
+         }
+        .n1 > .lorem1{
+            height: 120px;
+            width: 350px;
+            font-size: 20px;
+        }
+        .n1 > .button1{
+            height: 30px;
+            width: 350px;
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn1{
+            height: 25px;
+            width: 100px;
+         }
+         .btn2{
+            height: 25px;
+            width: 100px;
+         }
+         .n1>.font1{
+            height: 25px;
+            width: 10px;
+            /* border: 2px solid red; */
+         }
+         .font1{
+            height: 25px;
+            width: 120px;
+            display: flex;
+         }
+         .font1> .fa-brands{
+            font-size: 25px;
+            color: black;
+         }
+         .name1{
+            font-size: 20px;
+         }
+
+
+         .child1 > .n2{
+            height: 300px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            box-shadow: 0px 6px 6px 6px gainsboro;
+        }
+        .n2 > .t2{
+            height: 120px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+         }
+         .t2 > .h2{
+            height: 50px;
+            width: 110px;
+            font-size: 25px;
+            color: white;
+         }
+        .n2 > .lorem2{
+            height: 120px;
+            width: 350px;
+            font-size: 20px;
+        }
+        .n2 > .button2{
+            height: 30px;
+            width: 350px;
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn3{
+            height: 25px;
+            width: 100px;
+         }
+         .btn4{
+            height: 25px;
+            width: 100px;
+         }
+         .n2>.font2{
+            height: 25px;
+            width: 10px;
+            /* border: 2px solid red; */
+         }
+         .font2{
+            height: 25px;
+            width: 120px;
+            display: flex;
+         }
+         .font2> .fa-brands{
+            font-size: 25px;
+            color: black;
+         }
+         .name2{
+            font-size: 20px;
+         }
+
+
+
+         .child1 > .n3{
+            height: 300px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            box-shadow: 0px 6px 6px 6px gainsboro;
+        }
+        .n3 > .t3{
+            height: 120px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+         }
+         .t3 > .h3{
+            height: 50px;
+            width: 110px;
+            font-size: 25px;
+            color: white;
+         }
+        .n3 > .lorem3{
+            height: 120px;
+            width: 350px;
+            font-size: 20px;
+        }
+        .n3 > .button3{
+            height: 30px;
+            width: 350px;
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn5{
+            height: 25px;
+            width: 100px;
+         }
+         .btn6{
+            height: 25px;
+            width: 100px;
+         }
+         .n1>.font3{
+            height: 25px;
+            width: 10px;
+            /* border: 2px solid red; */
+         }
+         .font3{
+            height: 25px;
+            width: 120px;
+            display: flex;
+         }
+         .font3> .fa-brands{
+            font-size: 25px;
+            color: black;
+         }
+         .name3{
+            font-size: 20px;
+         }
+
+         .child2{
+            height: 350px;
+            width: 1300px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+
+        .child2 > .n4{
+            height: 300px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            box-shadow: 0px 6px 6px 6px gainsboro;
+        }
+        .n4 > .t4{
+            height: 120px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+         }
+         .t4 > .h4{
+            height: 50px;
+            width: 110px;
+            font-size: 25px;
+            color: white;
+         }
+        .n4 > .lorem4{
+            height: 120px;
+            width: 350px;
+            font-size: 20px;
+        }
+        .n4 > .button4{
+            height: 30px;
+            width: 350px;
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn7{
+            height: 25px;
+            width: 100px;
+         }
+         .btn8{
+            height: 25px;
+            width: 100px;
+         }
+         .n4>.font4{
+            height: 25px;
+            width: 10px;
+            /* border: 2px solid red; */
+         }
+         .font4{
+            height: 25px;
+            width: 120px;
+            display: flex;
+         }
+         .font4> .fa-brands{
+            font-size: 25px;
+            color: black;
+         }
+         .name4{
+            font-size: 20px;
+         }
+
+
+         .child2 > .n5{
+            height: 300px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            box-shadow: 0px 6px 6px 6px gainsboro;
+        }
+        .n5 > .t5{
+            height: 120px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+         }
+         .t5 > .h5{
+            height: 50px;
+            width: 110px;
+            font-size: 25px;
+            color: white;
+         }
+        .n5 > .lorem5{
+            height: 120px;
+            width: 350px;
+            font-size: 20px;
+        }
+        .n5 > .button5{
+            height: 30px;
+            width: 350px;
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn9{
+            height: 25px;
+            width: 100px;
+         }
+         .btn10{
+            height: 25px;
+            width: 100px;
+         }
+         .n5>.font5{
+            height: 25px;
+            width: 10px;
+            /* border: 2px solid red; */
+         }
+         .font5{
+            height: 25px;
+            width: 120px;
+            display: flex;
+         }
+         .font5> .fa-brands{
+            font-size: 25px;
+            color: black;
+         }
+         .name5{
+            font-size: 20px;
+         }
+
+
+         .child2 > .n6{
+            height: 300px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            box-shadow: 0px 6px 6px 6px gainsboro;
+        }
+        .n6 > .t6{
+            height: 120px;
+            width: 350px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+         }
+         .t6 > .h6{
+            height: 50px;
+            width: 110px;
+            font-size: 25px;
+            color: white;
+         }
+        .n6 > .lorem6{
+            height: 120px;
+            width: 350px;
+            font-size: 20px;
+        }
+        .n6 > .button6{
+            height: 30px;
+            width: 350px;
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn11{
+            height: 25px;
+            width: 100px;
+         }
+         .btn12{
+            height: 25px;
+            width: 100px;
+         }
+         .n6>.font6{
+            height: 25px;
+            width: 10px;
+            /* border: 2px solid red; */
+         }
+         .font6{
+            height: 25px;
+            width: 120px;
+            display: flex;
+         }
+         .font6> .fa-brands{
+            font-size: 25px;
+            color: black;
+         }
+         .name6{
+            font-size: 20px;
+         }
+</style>
+</head>
+<body>
+ <div class="main">
+    <div class="child1">
+        <div class="n1">
+            <div class="t1">
+                <div class="h1"><b>Thumbnail</b></div>
+            </div>
+            <div class="lorem1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur itaque voluptatem cumque ipsam quis eligendi.</div>
+            <div class="button1">
+                <button class="btn1">Open</button>
+                <button class="btn2">Close</button>
+                <div class="font1">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                    <div class="name1">Save plant</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="n2">
+            <div class="t2">
+                <div class="h2"><b>Thumbnail</b></div>
+            </div>
+            <div class="lorem2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur itaque voluptatem cumque ipsam quis eligendi.</div>
+            <div class="button2">
+                <button class="btn3">Open</button>
+                <button class="btn4">Close</button>
+                <div class="font2">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                    <div class="name2">Save plant</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="n3">
+            <div class="t3">
+                <div class="h3"><b>Thumbnail</b></div>
+            </div>
+            <div class="lorem3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur itaque voluptatem cumque ipsam quis eligendi.</div>
+            <div class="button3">
+                <button class="btn5">Open</button>
+                <button class="btn6">Close</button>
+                <div class="font3">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                    <div class="name3">Save plant</div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <div class="child2">
+        <div class="n4">
+            <div class="t4">
+                <div class="h4"><b>Thumbnail</b></div>
+            </div>
+            <div class="lorem4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur itaque voluptatem cumque ipsam quis eligendi.</div>
+            <div class="button4">
+                <button class="btn7">Open</button>
+                <button class="btn8">Close</button>
+                <div class="font4">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                    <div class="name4">Save plant</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="n5">
+            <div class="t5">
+                <div class="h5"><b>Thumbnail</b></div>
+            </div>
+            <div class="lorem5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur itaque voluptatem cumque ipsam quis eligendi.</div>
+            <div class="button5">
+                <button class="btn9">Open</button>
+                <button class="btn10">Close</button>
+                <div class="font5">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                    <div class="name5">Save plant</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="n6">
+            <div class="t6">
+                <div class="h6"><b>Thumbnail</b></div>
+            </div>
+            <div class="lorem6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur itaque voluptatem cumque ipsam quis eligendi.</div>
+            <div class="button6">
+                <button class="btn11">Open</button>
+                <button class="btn12">Close</button>
+                <div class="font6">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                    <div class="name6">Save plant</div>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+</body>
+</html>
